@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,100&family=Merriweather:wght@300&family=My+Soul&family=Open+Sans:wght@700&family=Poppins:ital,wght@1,300&family=Varela+Round&display=swap');
+body{
+    padding:10px 50px;
+    background: linear-gradient(to right,#072937,#1e4e5e,#14688c);
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'My Soul', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 500px;
+    margin:2vh auto 0 auto;
+    border-radius:20px;
+    flex-direction: column;
+}
+h1{
+    text-align:center;
+    letter-spacing:1.5px;
+    word-spacing: 1px ;
+    color:#0f25e4;
+}
+.formdes{
+    font-size: 20px;
+    width:100%;
+}
+.formdes input, select{
+    width:100%;
+    padding:6px;
+    border:1px solid blue;
+    margin:5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.formerr{
+    color:red;
+}
+input[type="radio"],input[type="checkbox"]{
+    width:6%;
+    margin:5px;
+    padding: 5px;
+}
+textarea{
+    width:100%;
+    border:1px solid blue;
+    border-radius: 10px;
+    font-size: 15px;
+    /*margin:20px;
+    padding: 35px;*/
+}
+input[type="submit"]{
+    margin: 10px;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    color:wheat;
+    background-color: rgb(44, 136, 182);
+    letter-spacing: 8px;
+    font-weight: 600;
+    width:100%;
+    
+    text-align: center;
+    
+}
+.formdes input:focus{
+    outline: 0;
+}
+.formdes.success input{
+    border-color:darkgreen;
+}
+.formdes.error input{
+    border-color:red;
+}
+input[type="submit"]:hover{
+    
+    font-size: 22px;
+    border-radius: 10px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    text-align:center;
+    cursor: pointer;
+    color:wheat;
+    background-color: rgb(49, 188, 22);
+    width:100%;
+    
+}

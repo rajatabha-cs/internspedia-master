@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+        <form action="sub.html" name="register" onsubmit="return validate()" method="post">
+            <h1>Registration Form</h1>
+            <div class="formdes" id="user">
+                User Id: <input type="text" name="userid" required><br>
+                <b><span class="formerr"></span></b>
+            </div>
+            <div class="formdes" id="pass">
+                Password: <input type="password" name="password" required><br>
+                <b><span class="formerr"></span></b>
+            </div>
+            <div class="formdes" id="nam">
+                Name: <input type="text" name="fname" required><br>
+                <b><span class="formerr"></span></b>
+            </div>
+            <div class="formdes" id="addr">
+                Address: <input type="text" name="add"><br>
+                <b><span class="formerr"></span></b>
+            </div>
+            <div class="formdes" id="count">
+                Country: <select name="country" id="country" required>
+                    <option value="">(Please Select a Country)</option>
+                    <option value="ind">India</option>
+                    <option value="us">US</option>
+                    <option value="pak">Pakistan</option>
+                    <option value="bangla">Bangladesh</option>
+                    <option value="sri">Srilanka</option>
+                    <option value="rus">Russia</option>
+                    <option value="afg">Afghanistan</option>
+                </select>
+                <b><span class="formerr"> </span></b><br>
+            </div>
+            <div class="formdes" id="zipc">
+                ZIP Code: <input type="number" name="zip" required>
+                <b><span class="formerr"></span></b><br>
+            </div>
+            <div class="formdes" id="ema">
+                Email: <input type="email" name="femail" required>
+                <b><span class="formerr"></span></b><br>
+            </div>
+            <br>
+            <div class="formdes" id="sex">
+                Sex: 
+                    <input type="radio" name="gen" required>Male&nbsp;&nbsp;&nbsp;<input type="radio" name="gen" required>Female 
+                    <br><b><span class="formerr"></span></b>
+                    
+            </div>
+            <br>
+            <div class="formdes" id="lang">
+                <p style="font-size:20px;">Language:</p>
+                    <input type="checkbox" name="lan" id="lan">English&nbsp;&nbsp;&nbsp;<input type="checkbox" name="lan" id="lan">Non-English 
+                    <br><b><span class="formerr"></span></b>
+            </div>
+            
+            <div class="formdes" id="abou">
+                <p style="font-size:21px;">About:</p> <textarea name="about" col="100" rows="4"></textarea>
+                <br><b><span class="formerr"></span></b>
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+        </form>
+    </div>
+    <script src="valid.js"></script>
+</body>
+</html>
